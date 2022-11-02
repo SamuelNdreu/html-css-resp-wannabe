@@ -128,11 +128,33 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
- @media all and (max-width: 1160px) {
+@media all and (max-width: 1160px) {
     .container {
+        width: 100%;
+    }
+}
+
+
+ /* EVERY CONTAINER WILL CHANGE SIZE. */
+
+
+@media all and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lessons .col {
+        width: 100%;
+    }
+    .steps .col{
+        width: 100%;
+    }
+    .why-us .col-left {
+        width: 100%;
+    }
+    .why-us .col-right {
         width: 100%;
     }
  }
 
-
- /* EVERY CONTAINER WILL CHANGE SIZE. */
+ /* IF THIS GET STRETCHED IN IT WILL GET ONE CARD IN COLUMN BY ONE */
